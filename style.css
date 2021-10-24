@@ -1,0 +1,513 @@
+
+    html {
+        scroll-behavior: smooth;
+    }
+    * {
+        padding: 0px; 
+        margin: 0px;
+    }
+    
+    /* header section */
+    #headerPic{
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        margin-bottom: -.4vh;
+        background-image: url('img/IMAG0360.jpg');
+        background-size:100% 100%;
+        background-repeat: no-repeat;     
+    }
+
+    #nameLine{
+        width: 40vw;
+        text-align: center;
+        top: 18vh;
+        left: 5%;
+        border-color: whitesmoke;
+        position:absolute;
+    }
+
+    .header{
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    #name{
+        position: absolute;
+        top: 23.5vh;
+        left: 25vw;
+        transform: translate(-50%, -50%);
+        font-size: 5vw;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    #smallName{
+        position: absolute;
+        top: 12vh;
+        left: 23vw;
+        transform: translate(-50%, -50%);
+        font-size: 4vw;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    #name2{
+        position: absolute;
+        top: 27%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        font-size: 200%;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .text{
+        font-family: 'Gayathri', sans-serif;
+        
+    }
+
+    .headers{
+        font-family: 'Roboto Mono', monospace;
+        color: teal;
+        text-align: center;
+        font-size: 40px;
+        padding-top: 3vh;
+        padding-bottom: 1vh;
+
+    }
+
+  
+
+/* ------------------------------------------------------------------------------------- */
+
+
+/* PC navbar */
+.navbarPC {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky; 
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+}
+
+
+.navbarPC a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    /* padding: 14px 16px; */
+    padding: 1% 5%;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;    
+}
+
+.navbarPC a:hover {
+    background: #ddd;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .navbarPC {
+      display: none;
+    }
+    #name{
+        position: absolute;
+        top: 21.5vh;
+        left: 25vw;
+        transform: translate(-50%, -50%);
+        font-size: 5vw;
+        font-family: 'Roboto Mono', monospace;
+    }
+    #smallName{
+        position: absolute;
+        top: 14.5vh;
+        left: 23vw;
+        transform: translate(-50%, -50%);
+        font-size: 4vw;
+        font-family: 'Roboto Mono', monospace;
+    }
+  }
+
+
+/* ------------------------------------------------------------------------------- */
+
+
+/* mobile navbar */
+.container {
+display: inline-block;
+cursor: pointer;
+position: fixed;
+right: 6%;
+top:2.5%;
+display: inline-block;
+cursor: pointer;
+z-index: 999;
+}
+
+.bar1, .bar2, .bar3 {
+width: 35px;
+height: 5px;
+background-color: whitesmoke;
+margin: 6px 0;
+transition: 0.4s;
+}
+
+.change .bar1 {
+-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+-webkit-transform: rotate(45deg) translate(-8px, -8px);
+transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.overlay{
+height: 100%;
+width: 0;
+top: 0;
+right:0;
+background-color: rgba(1,1,1, 0.9);
+position: fixed;
+overflow-x: hidden;
+}
+
+.overlayContent {
+text-align: center;
+display: flexbox;
+align-items: center;
+justify-content: space-around;
+margin-top: 20%;
+}
+
+.overlay a{
+display: block;
+padding: 8px;
+text-decoration: none;
+font-size: 36px;
+color: #f1f1f1;
+}
+
+@media screen and (min-width: 600px) {
+.container,.overlay {
+  display: none;
+}
+#name{
+    position: absolute;
+    top: 23.5vh;
+    left: 25vw;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    font-family: 'Roboto Mono', monospace;
+}
+#smallName{
+    position: absolute;
+    top: 12vh;
+    left: 23vw;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    font-family: 'Roboto Mono', monospace;
+}
+} 
+
+
+/* --------------------------------------------------------------------------- */
+
+/* about section     */
+
+    #aboutSpan{
+        display: block;
+        text-align: center;
+    }
+    #aboutText{
+        width: 40vw;
+        display: block;
+        text-align: justify;
+        /* margin-left: 10%;
+        margin-top: 1%; */
+        margin: auto;
+        text-align: center;
+        
+    }
+
+    #facePic {
+        /* width: 30%
+        height: 30%;
+        background-size: cover;
+        display: inline-block;
+        border-radius: 50%;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        float: left; */
+        border-radius: 50%;
+        border: 5px solid #cdb891;
+        /* width: 20vh;
+        height: 20vh; */
+    }
+
+    @media screen and (max-width: 600px) {
+        #aboutText{
+            width: 90vw;
+            display: block;
+            text-align: justify;
+            /* margin-left: 10%;
+            margin-top: 1%; */
+            margin: auto;
+            text-align: center;
+            
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* project section */
+    .projects{
+        background-color: beige;
+        display: block;
+        text-align: center;
+    }
+
+    #projectText{
+        width: 60vw;
+        display: block;
+        text-align: justify;
+        /* margin-left: 10%;
+        margin-top: 1%; */
+        margin: auto;
+        text-align: center;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    @media screen and (max-width: 600px) {
+        #projectText{
+            width: 90vw;
+            display: block;
+            text-align: justify;
+            /* margin-left: 10%;
+            margin-top: 1%; */
+            margin: auto;
+            text-align: center;
+            
+        }
+    }
+        
+    
+    .contact, #contact1{
+        background-color: gray;
+        margin-top: -28px;
+    }
+
+  
+    #pongPic{
+        width: 30vw;
+        height: 30vw;
+        
+    }
+
+ 
+
+    #watchPic{
+        width:40vw;
+        height: 20vw;       
+    }
+
+    #tradeMark{
+        text-align: center;
+        color: white;
+    }
+    #p5Pic{
+        width:30vw;
+        height: 30vw;
+        
+    }
+
+    .projectHeaders{
+        text-align: center;
+        font-family: 'Staatliches', cursive;
+        font-size: xx-large;
+        padding-bottom: 2vh;
+    }
+
+
+
+
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* experience tab */
+    .experience{
+        background-color: white;
+        /* display: block; */
+        
+    }
+
+    #experienceFormat{
+        margin-left: 17.5vw;
+        margin-right: 17.5vw;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        
+        
+        
+    }
+
+    #experienceText{
+        width: 30vw;
+        padding-left: 0vw;
+        
+        /* margin-left: 10%;
+        margin-top: 1%; */
+        /* margin: auto;
+        text-align: center; */
+        /* padding-top: 2vh;
+        padding-bottom: 2vh; */
+    }
+
+    .experiencePictures{
+        width: 12.5vw;
+        height: 12.5vw;       
+    }
+
+ 
+    .experienceHeaders{
+        text-align: center;
+        font-family: 'Staatliches', cursive;
+        font-size: xx-large;
+        
+    }
+
+    @media screen and (max-width: 600px) {
+        #experienceText{
+            width: 90vw;
+            display: block;
+            padding-left: 5vw;
+            
+            margin-left: 0;
+            margin-right: 0;
+            
+        }
+        
+        #scouts{
+            visibility: hidden;
+        }
+        #scouts:after{
+            content: "Boy Scouts";
+            display: block;
+            visibility: visible;
+        }
+
+        #experienceFormat{
+            display: block;
+            text-align: center;
+            margin-left:auto;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+        
+        }
+        .experiencePictures{
+            width: 25vw;
+            height: 25vw;       
+        }
+
+    }
+          
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #tradeMark{
+        text-align: center;
+        color: white;
+    }
+
+
+    .contact, #contact1{
+        background-color: gray;
+        margin-top: -28px;
+    }
