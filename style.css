@@ -66,6 +66,7 @@
 
     .text{
         font-family: 'Gayathri', sans-serif;
+
         
     }
 
@@ -73,7 +74,7 @@
         font-family: 'Roboto Mono', monospace;
         color: teal;
         text-align: center;
-        font-size: 40px;
+        font-size: 3.5vw;
         padding-top: 3vh;
         padding-bottom: 1vh;
 
@@ -222,10 +223,13 @@ color: #f1f1f1;
 /* --------------------------------------------------------------------------- */
 
 /* about section     */
-
+    .about{
+        background-color: beige;
+    }
     #aboutSpan{
         display: block;
         text-align: center;
+        background-color: beige;
     }
     #aboutText{
         width: 40vw;
@@ -432,9 +436,17 @@ color: #f1f1f1;
 
  
     .experienceHeaders{
+        text-align: left;
+        font-family: 'Staatliches', cursive;
+        font-size: 2.5vw;
+        width: 10vw;
+    }
+    #experienceHeaders{
         text-align: center;
         font-family: 'Staatliches', cursive;
-        font-size: xx-large;
+        font-size: 3.5vw;
+    
+       
         
     }
 
@@ -471,7 +483,27 @@ color: #f1f1f1;
             width: 25vw;
             height: 25vw;       
         }
-
+        .experienceHeaders{
+            text-align: center;
+            font-family: 'Staatliches', cursive;
+            font-size: xx-large;
+            width: 100vw;
+        }
+        #experienceHeaders{
+            text-align: center;
+            font-family: 'Staatliches', cursive;
+            font-size: 10vw;
+        }
+        .headers{
+                font-family: 'Roboto Mono', monospace;
+                color: teal;
+                text-align: center;
+                font-size: 40px;
+                padding-top: 3vh;
+                padding-bottom: 1vh;
+        
+            }
+        
     }
           
 
